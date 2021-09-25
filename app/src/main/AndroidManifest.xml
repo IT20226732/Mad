@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.minibazaar">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="LockedOrientationActivity">
+        <activity android:name="PharMedic.example.minibazaar.NonProjectFiles.FCMTestActivity"></activity>
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.OrderTrackActivity"
+            android:theme="@style/OriginalThemeNoActionBar"></activity>
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.OrderHistoryActivity"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.PaymentActivity"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.NonProjectFiles.OrderTrackTest"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.OrderPlacedActivity"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.CheckoutActivity"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.CartActivity"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.UpdateDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.WishlistActivity"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.IndividualProductActivity"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity android:name="PharMedic.example.minibazaar.NonProjectFiles.Test" />
+        <activity
+            android:name="PharMedic.example.minibazaar.ProductsCategory.ShoesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.ProfileActivity"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity android:name="PharMedic.example.minibazaar.Activities.ForgotPasswordActivity" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="PharMedic.example.minibazaar.Activities.MainActivity"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service
+            android:name=".java.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+
+
+</manifest>

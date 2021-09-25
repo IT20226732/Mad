@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "943537108738",
+    "project_id": "admin-d64b2",
+    "storage_bucket": "admin-d64b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943537108738:android:b3afb24a720dd95ffbf41b",
+        "android_client_info": {
+          "package_name": "com.example.minibazaar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943537108738-h7q84jgm13t05j4441psm9lgja2l82sp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFGJ6JfL9W538TSZfjuKNMr_u9tiFg_n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943537108738-h7q84jgm13t05j4441psm9lgja2l82sp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
